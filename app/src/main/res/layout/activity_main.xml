@@ -18,6 +18,14 @@
     card_view:cardUseCompatPadding="true"
     card_view:cardBackgroundColor="@color/colorPrimary">
 
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/lessons"
+        android:src="@drawable/lecture"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"/>
+
 </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -31,6 +39,15 @@
         card_view:cardElevation="5dp"
         card_view:cardUseCompatPadding="true"
         card_view:cardBackgroundColor="@color/colorPrimary">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/signals"
+            android:src="@drawable/forex"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"/>
+
 
     </androidx.cardview.widget.CardView>
 
