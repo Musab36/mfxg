@@ -9,7 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"
+        <activity android:name=".SignalsActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.salajim.musab.mfxg.MainActivity" />
+        </activity>
+        <activity android:name=".LessonsActivity" >
+        <meta-data android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.salajim.musab.mfxg.MainActivity" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -2,15 +2,39 @@ package com.salajim.musab.mfxg;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+    CardView lessonsCard;
+    CardView signalsCard;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        lessonsCard = (CardView) findViewById(R.id.card1);
+        signalsCard = (CardView) findViewById(R.id.card2);
+
+        lessonsCard.setOnClickListener(this);
+        signalsCard.setOnClickListener(this);
+
+    }
+
+    @Override
+    public void onClick(View v) {
+        if (v == lessonsCard) {
+            Intent intent = new Intent(this, LessonsActivity.class);
+            startActivity(intent);
+        }
+
+        if (v == signalsCard) {
+            Intent intent = new Intent(this, SignalsActivity.class);
+            startActivity(intent);
+        }
     }
 }
