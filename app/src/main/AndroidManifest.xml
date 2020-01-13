@@ -9,11 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SignalsActivity">
+        <activity android:name=".SignalsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <meta-data android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.salajim.musab.mfxg.MainActivity" />
         </activity>
-        <activity android:name=".LessonsActivity" >
+        <activity android:name=".LessonsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
         <meta-data android:name="android.support.PARENT_ACTIVITY"
             android:value="com.salajim.musab.mfxg.MainActivity" />
         </activity>
