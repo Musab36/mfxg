@@ -7,6 +7,23 @@
     tools:context=".MainActivity"
     android:background="@color/black">
 
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/toolbar_title"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
 <androidx.cardview.widget.CardView
     android:layout_width="match_parent"
     android:layout_height="250dp"
@@ -16,15 +33,29 @@
     card_view:cardCornerRadius="10dp"
     card_view:cardElevation="5dp"
     card_view:cardUseCompatPadding="true"
-    card_view:cardBackgroundColor="@color/colorPrimary">
+    card_view:cardBackgroundColor="@color/colorPrimary"
+    android:layout_below="@+id/toolbar">
+    
 
-    <ImageView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:id="@+id/lessons"
-        android:src="@drawable/lecture"
-        android:scaleType="centerCrop"
-        android:layout_gravity="center"/>
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/lessons"
+            android:src="@drawable/lecture"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lessonTxt"
+            android:text="@string/lesson_text"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="140dp"
+            android:textColor="@android:color/black"/>
+
 
 </androidx.cardview.widget.CardView>
 
@@ -40,14 +71,25 @@
         card_view:cardUseCompatPadding="true"
         card_view:cardBackgroundColor="@color/colorPrimary">
 
-        <ImageView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:id="@+id/signals"
-            android:src="@drawable/forex"
-            android:scaleType="centerCrop"
-            android:layout_gravity="center"/>
 
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/signals"
+                android:src="@drawable/forex"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/signalTxt"
+                android:text="@string/signal_text"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="140dp"
+                android:textColor="@android:color/black"/>
 
     </androidx.cardview.widget.CardView>
 
