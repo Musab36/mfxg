@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1035097277641",
+    "firebase_url": "https://mfx-g-b1840.firebaseio.com",
+    "project_id": "mfx-g-b1840",
+    "storage_bucket": "mfx-g-b1840.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1035097277641:android:8495a0fdc15c82dbd7f918",
+        "android_client_info": {
+          "package_name": "com.salajim.musab.mfxg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1035097277641-j37sn3h064qdcbqhfechmr3snr1gh6fi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.salajim.musab.mfxg",
+            "certificate_hash": "de77b15cfe818fe38198a9ca9e6106d4830b5f5b"
+          }
+        },
+        {
+          "client_id": "1035097277641-jeiobo51papj1g7f57qgl29rfnlm182d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZQfRWBOA-x-tAm5DyKqAlvYLlSYEsv3s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1035097277641-jeiobo51papj1g7f57qgl29rfnlm182d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
