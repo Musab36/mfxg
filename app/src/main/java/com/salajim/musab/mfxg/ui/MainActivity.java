@@ -1,12 +1,13 @@
-package com.salajim.musab.mfxg;
+package com.salajim.musab.mfxg.ui;
 
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import com.salajim.musab.mfxg.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     CardView lessonsCard;

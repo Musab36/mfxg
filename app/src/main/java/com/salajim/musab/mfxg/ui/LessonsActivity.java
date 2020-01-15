@@ -1,4 +1,4 @@
-package com.salajim.musab.mfxg;
+package com.salajim.musab.mfxg.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -11,8 +11,10 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
+import com.salajim.musab.mfxg.R;
 import com.salajim.musab.mfxg.adapters.LessonsAdapter;
 import com.salajim.musab.mfxg.models.Lessons;
+import com.salajim.musab.mfxg.ui.AddLessonsActivity;
 
 import java.util.Vector;
 
