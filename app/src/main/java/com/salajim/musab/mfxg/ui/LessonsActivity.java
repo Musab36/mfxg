@@ -78,7 +78,7 @@ public class LessonsActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.action_add) {
-            Intent intent = new Intent(this, AddLessonsActivity.class);
+            Intent intent = new Intent(this, LessonsAdminActivity.class);
             startActivity(intent);
 
             return true;

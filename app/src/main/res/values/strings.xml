@@ -4,4 +4,8 @@
     <string name="signal_text">Signals</string>
     <string name="toolbar_title">Somali Forex</string>
     <string name="add_lessons">Kuderista Casharada</string>
+    <string name="admin">Admin Page</string>
+    <string name="username">Enter username</string>
+    <string name="password">Enter password</string>
+    <string name="submit_btn">Login</string>
 </resources>
