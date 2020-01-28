@@ -14,7 +14,6 @@ import android.view.MenuItem;
 import com.salajim.musab.mfxg.R;
 import com.salajim.musab.mfxg.adapters.LessonsAdapter;
 import com.salajim.musab.mfxg.models.Lessons;
-import com.salajim.musab.mfxg.ui.AddLessonsActivity;
 
 import java.util.Vector;
 
@@ -64,26 +63,4 @@ public class LessonsActivity extends AppCompatActivity {
 
     }
 
-    // inflating the menu
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu_add, menu);
-
-        return super.onCreateOptionsMenu(menu);
-    }
-
-    // Menu actions
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-        if (id == R.id.action_add) {
-            Intent intent = new Intent(this, LessonsAdminActivity.class);
-            startActivity(intent);
-
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
 }

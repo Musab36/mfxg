@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.AddLessonsActivity">
+    tools:context=".ui.AddSignalsActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
@@ -16,7 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/barText"
-            android:text="@string/add_lessons"
+            android:text="@string/add_signals"
             android:layout_marginLeft="40dp"
             android:textColor="@android:color/black"
             android:textSize="20sp"

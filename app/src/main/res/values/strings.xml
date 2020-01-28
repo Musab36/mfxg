@@ -3,7 +3,8 @@
     <string name="lesson_text">Casharada</string>
     <string name="signal_text">Signals</string>
     <string name="toolbar_title">Somali Forex</string>
-    <string name="add_lessons">Kuderista Casharada</string>
+    <string name="add_lessons">Add Lessons</string>
+    <string name="add_signals">Add Signals</string>
     <string name="admin">Admin Page</string>
     <string name="username">Enter username</string>
     <string name="password">Enter password</string>

@@ -7,12 +7,12 @@ import android.os.Bundle;
 
 import com.salajim.musab.mfxg.R;
 
-public class AddLessonsActivity extends AppCompatActivity {
+public class AddSignalsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_lessons);
+        setContentView(R.layout.activity_add_signals);
 
         // Setting up the custom toolbar
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -20,6 +20,5 @@ public class AddLessonsActivity extends AppCompatActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-
     }
 }
