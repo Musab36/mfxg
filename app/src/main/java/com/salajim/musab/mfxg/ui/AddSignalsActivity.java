@@ -20,6 +20,7 @@ import java.util.List;
 
 public class AddSignalsActivity extends AppCompatActivity implements View.OnClickListener {
     EditText mPair;
+    EditText mSignal;
     EditText mEntry;
     EditText mTakeProfit;
     EditText mStopLoss;
@@ -44,6 +45,7 @@ public class AddSignalsActivity extends AppCompatActivity implements View.OnClic
         mEntry = (EditText) findViewById(R.id.entry);
         mTakeProfit = (EditText) findViewById(R.id.takeProfit);
         mStopLoss = (EditText) findViewById(R.id.stopLoss);
+        mSignal = (EditText) findViewById(R.id.siganl);
         mSubmit = (Button) findViewById(R.id.signalBtn);
 
         mSubmit.setOnClickListener(this);
@@ -62,6 +64,7 @@ public class AddSignalsActivity extends AppCompatActivity implements View.OnClic
 
     private void addSignals() {
         String pair = mPair.getText().toString().trim();
+        String sign = mSignal.getText().toString().trim();
         String entry = mEntry.getText().toString().trim();
         String takeProfit = mTakeProfit.getText().toString().trim();
         String stopLoss = mStopLoss.getText().toString().trim();
@@ -69,10 +72,11 @@ public class AddSignalsActivity extends AppCompatActivity implements View.OnClic
         if(!TextUtils.isEmpty(pair)) {
             String id = reference.push().getKey();
 
-            Signals signal = new Signals(id, pair, entry, takeProfit, stopLoss);
+            Signals signal = new Signals(id, pair, sign, entry, takeProfit, stopLoss);
             reference.child(id).setValue(signal);
 
             mPair.setText("");
+            mSignal.setText("");
             mEntry.setText("");
             mTakeProfit.setText("");
             mStopLoss.setText("");

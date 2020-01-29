@@ -52,9 +52,17 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/siganl"
+                android:hint="@string/signal"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/pair"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:id="@+id/entry"
                 android:hint="@string/entry"
-                android:layout_below="@+id/pair"
+                android:layout_below="@+id/siganl"
                 android:layout_marginTop="15dp"
                 android:inputType="numberDecimal" />
 

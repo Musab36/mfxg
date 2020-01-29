@@ -53,7 +53,7 @@ public class SignalsAdminActivity extends AppCompatActivity  implements View.OnC
     }
 
     private void getAdmin() {
-
+        
     }
 
 

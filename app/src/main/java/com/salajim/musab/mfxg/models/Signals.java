@@ -3,15 +3,17 @@ package com.salajim.musab.mfxg.models;
 public class Signals {
     String id;
     String pair;
+    String signal;
     String entry;
     String takeProfit;
     String stopLoss;
 
     public Signals() {}
 
-    public Signals(String id, String pair, String entry, String takeProfit, String stopLoss) {
+    public Signals(String id, String pair, String signal, String entry, String takeProfit, String stopLoss) {
         this.id = id;
         this.pair = pair;
+        this.signal = signal;
         this.entry = entry;
         this.takeProfit = takeProfit;
         this.stopLoss = stopLoss;
@@ -23,6 +25,10 @@ public class Signals {
 
     public String getPair() {
         return pair;
+    }
+
+    public String getSignal() {
+        return signal;
     }
 
     public String getEntry() {
