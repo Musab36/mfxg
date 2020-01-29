@@ -9,6 +9,11 @@
     <string name="username">Enter username</string>
     <string name="password">Enter password</string>
     <string name="submit_btn">Login</string>
+    <string name="pairs">Enter pair</string>
+    <string name="entry">Enter entry price</string>
+    <string name="profit">Enter take profit</string>
+    <string name="stop_loss">Enter Stop loss</string>
+    <string name="submit_signal">Submit</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
